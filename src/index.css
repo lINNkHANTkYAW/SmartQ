@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-kbz-primary: #0D6EFD;
+  --color-kbz-secondary: #003D73;
+}
+
+@layer base {
+  html, body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f4f6;
+    font-family: var(--font-sans);
+  }
+
+  #root {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+/* Custom scrollbar for the phone viewport */
+.phone-viewport::-webkit-scrollbar {
+  width: 4px;
+}
+
+.phone-viewport::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.phone-viewport::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 10px;
+}
+
+.phone-viewport::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 24px);
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Smart Q - Beauty & Wellness Queue",
+  "description": "A KBZPay Mini App for smart booking and queue management in the beauty and wellness industry.",
+  "requestFramePermissions": ["geolocation"]
+}
