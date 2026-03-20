@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Smart Q - Beauty & Wellness Queue (KBZPay Mini App)
 
 Smart Q is a high-fidelity prototype of a Beauty & Wellness booking and queue management platform, designed to run as a KBZPay Mini App.
@@ -49,3 +50,6 @@ Smart Q is a high-fidelity prototype of a Beauty & Wellness booking and queue ma
 
 4. **Conclusion (15s)**:
    - "Smart Q turns idle wait time into commerce opportunities while providing a seamless experience for both customers and merchants."
+=======
+# SmartQ
+>>>>>>> e50d7bf9f4240546a0031742776de59ebae46fcb
