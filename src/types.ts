@@ -6,7 +6,7 @@ export enum BookingStatus {
   CHECKED_IN = "CHECKED_IN",
   COMPLETED = "COMPLETED",
   CANCELLED = "CANCELLED",
-  NO_SHOW = "NO_SHOW"
+  NO_SHOW = "NO_SHOW",
 }
 
 export enum TokenStatus {
@@ -15,16 +15,16 @@ export enum TokenStatus {
   IN_PROGRESS = "IN_PROGRESS",
   DONE = "DONE",
   SKIPPED = "SKIPPED",
-  CANCELLED = "CANCELLED"
+  CANCELLED = "CANCELLED",
 }
 
 export interface User {
   id: string;
   name: string;
   phone: string;
-  role: 'CUSTOMER' | 'MERCHANT_STAFF' | 'MERCHANT_ADMIN' | 'PLATFORM_ADMIN';
+  role: "CUSTOMER" | "MERCHANT_STAFF" | "MERCHANT_ADMIN" | "PLATFORM_ADMIN";
   loyaltyPoints: number;
-  tier: 'BRONZE' | 'SILVER' | 'GOLD' | 'VIP';
+  tier: "BRONZE" | "SILVER" | "GOLD" | "VIP";
 }
 
 export interface Merchant {
@@ -66,14 +66,14 @@ export interface Staff {
 
 export interface Booking {
   id: string;
-  userId: string;
+  customerId: string;
   branchId: string;
   serviceId: string;
   staffId: string;
   date: string;
   time: string;
   status: BookingStatus;
-  fee: number;
+  amount: number;
 }
 
 export interface QueueToken {
